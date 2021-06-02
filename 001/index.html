@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+        // Code One
+        //  to change the item's color where the id is el  we will have an error because it can no find the el element
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        // Code Two
+        // to run the past function but after the page loaded
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+        // Code Three
+        //  to change the item's color where the id is el
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
